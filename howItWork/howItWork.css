@@ -1,0 +1,452 @@
+/* ~~~ RESET START ~~~ */
+/* ~~~ RESET END ~~~ */
+/* ============================================================== */
+/* ~~~ DEFAULT CLASSES START ~~~ */
+/* ~~~ DEFAULT CLASSES END ~~~ */
+/* ============================================================== */
+/* ~~~ DEFAULT COMPONENT START ~~~ */
+/* ~~~ DEFAULT COMPONENT END ~~~ */
+/* ============================================================== */
+/* ~~~ CASTOM STYLE START ~~~ */
+/* ~~~ CASTOM STYLE END ~~~ */
+
+/* ~~~ RESET START ~~~ */
+/* Указываем box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: none;
+  padding: 0;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  /* optimizeLegibility для микротекста */
+  line-height: 1.5;
+
+  color: black;
+  font: 400 16px/1 'Roboto', sans-serif;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a[class] {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  /* Убираем стандартные бордеры */
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ~~~ RESET END ~~~ */
+/* ============================================================== */
+/* ~~~ DEFAULT CLASSES START ~~~ */
+.container {
+  background-color: #fff;
+  padding: 50px 60px;
+}
+
+.bg-yellow {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.bg-gray {
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.bg-red {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.bg-blue {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.bg-aqua-blue {
+  background-color: rgba(0, 255, 255, 0.3);
+}
+
+.bg-orange {
+  background-color: rgba(255, 166, 0, 0.3);
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+.margin-top70 {
+  margin-top: 70px;
+}
+
+.margin-top130 {
+  margin-top: 130px;
+}
+
+.margin-top190 {
+  margin-top: 190px;
+}
+
+.margin-top250 {
+  margin-top: 250px;
+}
+
+.text-align-l {
+  text-align: left;
+}
+
+.span-fencing {
+  width: 220px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.span-fencing-title {
+  border-left: 2px solid rgb(238, 94, 94);
+  padding: 5px 30px 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: rgba(256, 256, 0, 0.3);
+  margin-bottom: 10px;
+}
+
+.span-fencing,
+.span-fencing-title {
+  display: inline-block;
+  border-right: 2px solid rgb(238, 94, 94);
+}
+
+/* ~~~ DEFAULT CLASSES END ~~~ */
+/* ============================================================== */
+/* ~~~ DEFAULT COMPONENT START ~~~ */
+
+.hr {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 700px;
+  max-width: 80%;
+  height: 3px;
+  margin-left: 3%;
+  margin-bottom: 15px;
+}
+
+.hr_red {
+  background: red;
+}
+
+.hr_yellow {
+  background: yellow;
+}
+
+/* table-hide start */
+.table-hide {
+  margin-left: 25px;
+  background-color: rgb(255, 255, 0);
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.9);
+  border-radius: 0 0 7px 7px;
+  width: 900px;
+  max-width: 80%;
+  transform: scaleY(1);
+  transition: all 0.5s ease 0s;
+
+}
+
+.table-hide__full {
+  z-index: 1;
+}
+
+.table-hide caption {
+  padding: 13px 35px 15px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.table-hide__caption1 {
+  border-radius: 7px;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.table-hide__caption2 {
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(255, 0, 0, 0.9);
+}
+
+.table-hide th {
+  padding: 25px 0 15px 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.table-hide td {
+  line-height: 1.6;
+  padding: 25px 50px;
+}
+
+.table-hide pre {
+  margin: 0;
+}
+
+.border-r {
+  border-right: 2px solid rgba(255, 0, 0, 0.9);
+}
+
+.table-hide td.vertical-align-t {
+  vertical-align: top;
+}
+
+.tbody__dual td:first-child {
+  width: 270px;
+}
+
+.tbody__dual td:last-child {
+  padding-left: 0;
+}
+
+/* toggle */
+.table-hide.scale {
+  transform: scaleY(0);
+  transition: all 0.4s ease 0s;
+}
+
+/* toggle */
+/* table-hide end */
+
+/* div-table__wrapper start */
+.div-table__wrapper {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.div-table__caption {
+  padding: 13px 35px 15px;
+  font-size: 20px;
+  text-align: right;
+  cursor: pointer;
+  background-color: red;
+}
+
+.div-table__body {
+  border-radius: 0 0 7px 7px;
+  background-color: red;
+  line-height: 1.5;
+}
+
+.div-table__body pre {
+  margin-top: 0;
+}
+
+.div-table__body hr {
+  margin: 10px 0 0 40px;
+  width: 50%;
+}
+
+.div-table__body pre>hr {
+  margin: 0 0 0 40px;
+}
+
+.div-table__fencing10,
+.div-table__fencing20,
+.div-table__fencing30,
+.div-table__fencing35,
+.div-table__fencing45 {
+  border-right: 1px solid black;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.div-table__fencing {
+  width: 100%;
+}
+
+.div-table__fencing10 {
+  width: 10%;
+}
+
+.div-table__fencing90 {
+  width: 90%;
+}
+
+.div-table__fencing20 {
+  width: 20%;
+}
+
+.div-table__fencing80 {
+  width: 80%;
+}
+
+.div-table__fencing30 {
+  width: 30%;
+}
+
+.div-table__fencing70 {
+  width: 70%;
+}
+
+.div-table__fencing35 {
+  width: 35%;
+}
+
+.div-table__fencing65 {
+  width: 65%;
+}
+
+.div-table__fencing45 {
+  width: 45%;
+}
+
+.div-table__fencing55 {
+  width: 55%;
+}
+
+.div-table__fencing,
+.div-table__fencing10,
+.div-table__fencing90,
+.div-table__fencing20,
+.div-table__fencing80,
+.div-table__fencing30,
+.div-table__fencing70,
+.div-table__fencing45,
+.div-table__fencing55,
+.div-table__fencing35,
+.div-table__fencing65 {
+  padding: 20px 20px 0 20px;
+}
+
+.div-table__fencing-title {
+  padding: 8px 0 7px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30%;
+  background-color: black;
+  color: red;
+}
+
+.div-table__body .padding-b20 {
+  padding-bottom: 20px;
+}
+
+/* div-table__wrapper end */
+/* ~~~ DEFAULT COMPONENT END ~~~ */
+/* ============================================================== */
+/* ~~~ CASTOM STYLE START ~~~ */
+h2 {
+  margin-bottom: 40px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.h2-wrapper {
+  margin-left: 30px;
+  width: 60%;
+}
+
+p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+p.not-text-indent {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.div-mark {
+  border-radius: 8px;
+  background-color: yellow;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.span-invert {
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+  padding: 3px 6px 2px;
+  font-size: 17px;
+}
+
+/* ~~~ CASTOM STYLE END ~~~ */

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hot_buttons</title>
+  <link rel="shortcut icon" href="#" type="image/png">
+
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/flex.css">
+  <link rel="stylesheet" href="./howItWork.css">
+</head>
+
+<body>
+  <section class="js">
+    <div class="container bg-yellow">
+      <div class="h2-wrapper">
+        <h2 class="bg-red">JS</h2>
+      </div>
+      <p><span class="span-fencing"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table" target="_blank">link to MDN</a></span> - Operator
+        precedence</p>
+      <p><span class="span-fencing"><a href="http://java-script2017.blogspot.com/2017/05/js-1-hello-world.html" target="_blank">SORAX</a></span> - Sorax__blog</p>
+      <span class="hr hr_red"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">Типи даних</span></p>
+      <div class="Data_types position-r">
+        <div class="div-table__wrapper position-a">
+          <div data-target="toggle" class="div-table__caption">
+            <b>Data types</b>
+          </div>
+          <div class="div-table__body">
+            <div class="div-table__fencing-title">
+              Основні типи даних:
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">
+                <pre>
+<a href="http://xn--80adth0aefm3i.xn--j1amh/boolean" target="_blank">Boolean</a>
+<a href="http://xn--80adth0aefm3i.xn--j1amh/string" target="_blank">String</a>
+<a href="http://xn--80adth0aefm3i.xn--j1amh/number" target="_blank">Number</a>
+<a href="http://xn--80adth0aefm3i.xn--j1amh/Symbol" target="_blank">Symbol</a></pre>
+              </div>
+              <div class="div-table__fencing70">
+                <pre>
+=>  логічний (булевий) тип даних: true і false.
+=>  рядок, символьний тип даних, тобто послідовність символів.
+=>  числа цілі або з плаваючою крапкою.
+=>  примітивний тип даних.</pre>
+              </div>
+            </div>
+            <div class="div-table__fencing-title">
+              Спеціальний тип даних:
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">
+                <pre>
+              <a href="http://xn--80adth0aefm3i.xn--j1amh/undefined" target="_blank">undefined</a>
+              <a href="http://xn--80adth0aefm3i.xn--j1amh/null" target="_blank">null</a></pre>
+              </div>
+              <div class="div-table__fencing70">
+                <pre>
+=> зміна якій не присвоїли значення.
+=> нулєве значення, "пусте значення".</pre>
+              </div>
+            </div>
+            <div class="div-table__fencing padding-b20">
+              <pre>
+              Для визначення типу використовують <a href="http://xn--80adth0aefm3i.xn--j1amh/typeof" target="_blank">typeof</a>.
+                                                isNaN(1 + null) // false
+                                                isNaN(1 + undefined) // true</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="not-text-indent margin-top70"><span class="span-fencing-title">Transformation</span></p>
+      <div class="Transformation position-r">
+        <div class="div-table__wrapper position-a">
+          <div data-target="toggle" class="div-table__caption">
+            <b>Transformation</b>
+          </div>
+          <div class="div-table__body">
+            <div class="div-table__fencing">
+              <pre>
+                <a href="http://xn--80adth0aefm3i.xn--j1amh/%D0%BF%D0%B5%D1%80%D0%B5%D1%82%D0%B2%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%20%D1%82%D0%B8%D0%BF%D1%96%D0%B2%20%D0%B4%D0%B0%D0%BD%D0%B8%D1%85"
+                  target="_blank">Перетворення типів даних</a></pre>
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">
+                <pre>      String(n)
+      n + ""
+      .toString()
+
+      Number("n")
+      +"n"
+      parseInt("n", 10)
+      parseFloat("n")
+
+      n.toFixed(2)
+
+      Boolean(n)
+      !!n
+
+    Boolean(undefined)
+    Boolean(null)
+    Boolean(0)
+    Boolean(NaN)
+    Boolean("")</pre>
+              </div>
+              <div class="div-table__fencing70">
+                <pre>=> перевести в строку
+=> в строку
+=> в строку
+
+=> перевести в числовой тип
+=> в числовой тип (унарный плюс - игнорируются пробелы перед числом)
+=> в числовой тип (игнорируются пробелы перед числом и все символы после)
+=> в числовой тип
+
+=> округляет число n до 2 знаков после запятой
+
+=> перевести в boolean
+=> в boolean
+
+// false
+// false
+// false
+// false
+// false</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="hr hr_red"></span>
+    </div>
+  </section>
+  <section class="RegExp">
+    <div class="container bg-gray">
+      <div class="h2-wrapper">
+        <h2 class="bg-red">RegExp</h2>
+      </div>
+      <p><span class="span-fencing"></span> <a href="http://xn--80adth0aefm3i.xn--j1amh/RegExp" target="_blank">RegExp</a> </p>
+      <p class="not-text-indent"><span class="span-fencing-title">flags</span></p>
+      <div class="flags position-r">
+        <div class="div-table__wrapper position-a">
+          <div data-target="toggle" class="div-table__caption">
+            <b>flags</b>
+          </div>
+          <div class="div-table__body">
+            <div class="d-flex">
+              <div class="div-table__fencing10">
+                <pre>
+g
+i
+m
+y
+u</pre>
+              </div>
+              <div class="div-table__fencing90">
+                <pre>
+=> глобальний пошук.
+=> ігнорувати регістр символів.
+=> багаторядковий пошук.
+=> шукає співставлення у властивостях lastIndex регулярного виразу і не шукає в більш пізніших індексах.
+=> включає функції Unicode.</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="hr hr_red"></span>
+    </div>
+  </section>
+  <section class="git">
+    <div class="container bg-red">
+      <div class="h2-wrapper">
+        <h2 class="bg-red">git</h2>
+      </div>
+            <p><span class="span-fencing"><a href="https://githowto.com/uk/setup" target="_blank">git reference</a></span> - git reference</p>
+            <p><span class="span-fencing">git config --list</span> - Проверить состояние (выход "Q")</p>
+      <p><span class="span-fencing">git help &lt;verb&gt;</span> - Справка</p>
+      <p><span class="span-fencing">git add -h</span> - Краткий вывод "help"</p>
+      <p><span class="span-fencing">cd C:/Users/user/my_project</span> - Инициализация репозитория в существующем каталоге (--> git init)</p>
+      <span class="hr hr_yellow"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">SSH-keygen</span></p>
+      <div class="position-r">
+        <div class="div-table__wrapper position-a">
+          <div class="div-table__caption">
+            <b>SSH-keygen</b>
+          </div>
+          <div class="div-table__body scale">
+            <div class="d-flex">
+              <div class="div-table__fencing30">Git Bash</div>
+              <div class="div-table__fencing70">запустить и ввести <b>ssh-keygen</b> enter*4
+                далее открыть сгенерированый файл (id_rsa.pub) и скопировать его содержимое</div>
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">Github</div>
+              <div class="div-table__fencing70">зайти в settings -> SSH and GPG keys -> создать ключ</div>
+            </div>
+            <div class="div-table__fencing-title">
+              в терминале
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">cd D:\directory\directory</div>
+              <div class="div-table__fencing70">выбираем папку, где будет содержаться repository</div>
+            </div>
+            <div class="d-flex">
+              <div class="div-table__fencing30">git clone</div>
+              <div class="div-table__fencing70">далее скопировать пароль github -> Clone and download
+                (git clone git@github.com:LordVold/testRepository.git)</div>
+            </div>
+            <div class="div-table__fencing30">dir -> cd D:... -> git status</div>
+          </div>
+        </div>
+      </div>
+      <span class="hr hr_yellow margin-top70"></span>
+      <p><span class="span-fencing">git status</span> - Проверка статуса файлов</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Краткое состояние</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Краткое состояние</caption>
+          <tbody>
+            <tr>
+              <td class="">
+                <pre>
+git status -s
+ M README
+MM Rakefile
+A  lib/git.rb
+M  lib/simplegit.rb
+?? LICENSE.txt</pre>
+              </td>
+              <td class="">Новые файлы, которые не отслеживаются, имеют рядом с собой - <b>"??"</b>, новые файлы, которые были добавлены в промежуточную область, имеют
+                <b>"A"</b>,
+                измененные файлы имеют <b>"M"</b> и так далее. Выходные данные состоят из двух столбцов - левый столбец показывает состояние промежуточной области, а правый столбец -
+                состояние
+                рабочего дерева. Так, например, в этом выводе <b>README</b> файл изменяется в рабочем каталоге, но еще не подготовлен, а <b>lib/simplegit.rb</b> файл изменяется и
+                подготовлен. А
+                <b>Rakefile</b> был изменен, подготовлен и затем снова изменен, поэтому в него вносятся изменения, как поэтапные, так и неустановленные.</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <pre>
+<span class="span-fencing">-s (--short)</span> - git status -s
+<span class="span-fencing">??</span> - Новые файлы, которые не отслеживаются
+<span class="span-fencing">A</span> - Новые файлы, которые были добавлены в промежуточную область
+<span class="span-fencing">M</span> - Измененные файлы
+                                </pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">git add . </span> - Отслеживание новых файлов</p>
+      <p><span class="span-fencing">git diff</span> - Чтобы увидеть, что изменили, но еще не поставили</p>
+
+      <p><span class="span-fencing">git diff --staged (--cached)</span> - Эта команда сравнивает поэтапные изменения с последним коммитом</p>
+      <span class="hr hr_yellow"></span>
+      <p><span class="span-fencing">git commit -m '...'</span> - message</p>
+      <p><span class="span-fencing">git commit -a -m '...'</span> - -a - позволяет пропустить <b>git add</b></p>
+      <p class="not-text-indent"><span class="span-fencing-title">Отмена вещей</span></p>
+      <p><span class="span-fencing">--amend</span> - удалит предыдущий комит, вставляя на его место текущий</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Замена <b>commit</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Замена <b>commit</b></caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git commit -m 'Initial commit'
+git add forgotten_file
+git commit --amend</pre>
+              </td>
+              <td>В итоге вы получаете один коммит - второй коммит заменяет результаты первого.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="hr hr_yellow margin-top70"></span>
+      <p><span class="span-fencing">git push</span> - отправить на сервер после <b>commit</b></p>
+      <span class="hr hr_yellow"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">branches</span></p>
+      <p><span class="span-fencing">git branch testing</span> - Создание новой ветки</p>
+      <p><span class="span-fencing">git checkout testing</span> - Переключение веток</p>
+      <p><span class="span-fencing">git checkout -b testing</span> - Сокращение предыдущих двух команд</p>
+      <p><span class="span-fencing">git branch -d testing</span> - Удалить ветку</p>
+      <p class="not-text-indent"><span class="span-fencing-title">Основное слияние</span></p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Основное слияние</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Основное слияние</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git checkout master
+Switched to branch 'master'
+git merge iss53
+Merge made by the 'recursive' strategy.
+index.html |    1 +
+1 file changed, 1 insertion(+)</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="hr hr_yellow margin-top70"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">git pull</span> - Последовательность двух команд: git fetch и git merge. Команда автоматически сливает коммиты, не давая,
+        сначала просмотреть их</p>
+      <p class="not-text-indent"><span class="span-fencing-title">git fetch</span> - При использовании fetch, git собирает все коммиты из целевой ветки, которых нет в текущей ветке, и сохраняет
+        их в локальном
+        репозитории</p>
+      <span class="hr hr_yellow"></span>
+      <p><span class="span-fencing">git rm &lt;file name&gt; (remove)</span> - Выполняет этап удаления файла</p>
+      <p><span class="span-fencing">git mv file_from file_to</span> - Переименовать файл в Git</p>
+      <span class="hr hr_yellow"></span>
+      <p><span class="span-fencing">git log</span> - перечисляет коммиты, сделанные в этом хранилище, в обратном хронологическом порядке; то есть самые последние коммиты появляются первыми</p>
+      <p><span class="span-fencing">git log &lt;name&gt; (--all)</span> - посмотреть конкретную ветку или все</p>
+      <p><span class="span-fencing">git log -p (-2)</span> - показывает разницу (вывод патча), вносимую в каждый коммит (ограничить количество отображаемых записей журнала, -2 - отображение
+        только последних двух)</p>
+      <p><span class="span-fencing">git log --stat</span> - некоторые сокращенные статистические данные для каждого коммита</p>
+      <p><span class="span-fencing">git log --pretty=format</span> - указать свой собственный формат вывода журнала</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1"><b>--pretty=format:</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2"><b>--pretty=format:</b></caption>
+          <tbody>
+            <tr>
+              <th>вариант</th>
+              <th>Описание вывода</th>
+            </tr>
+
+            <tr>
+              <td>%H</td>
+              <td>Зафиксируйте хеш</td>
+            </tr>
+            <tr>
+              <td>%h</td>
+              <td>Сокращенный коммит хеш</td>
+            </tr>
+            <tr>
+              <td>%T</td>
+              <td>Хэш дерева</td>
+            </tr>
+            <tr>
+              <td>%t</td>
+              <td>Сокращенное дерево хеш</td>
+            </tr>
+            <tr>
+              <td>%P</td>
+              <td>Родительские хеши</td>
+            </tr>
+            <tr>
+              <td>%p</td>
+              <td>Сокращенные родительские хеши</td>
+            </tr>
+            <tr>
+              <td>%an</td>
+              <td>Имя автора</td>
+            </tr>
+            <tr>
+              <td>%ae</td>
+              <td>Email автора</td>
+            </tr>
+            <tr>
+              <td>%ad</td>
+              <td>Дата автора (формат учитывает параметр --date =)</td>
+            </tr>
+            <tr>
+              <td>%ar</td>
+              <td>Дата автора, относительная</td>
+            </tr>
+            <tr>
+              <td>%cn</td>
+              <td>Имя коммиттера</td>
+            </tr>
+            <tr>
+              <td>%ce</td>
+              <td>Электронная почта коммиттера</td>
+            </tr>
+            <tr>
+              <td>%cd</td>
+              <td>Дата коммиттера</td>
+            </tr>
+            <tr>
+              <td>%cr</td>
+              <td>Дата коммиттера, относительная</td>
+            </tr>
+            <tr>
+              <td class="padding-b25">%s</td>
+              <td class="padding-b25">Предмет</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">git log --pretty=format:"%h %s" --graph</span> - добавляет симпатичный маленький график ASCII, показывающий вашу ветку и историю слияний
+      </p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Общие варианты <b>git log</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Общие варианты <b>git log</b></caption>
+          <tbody>
+            <tr>
+              <th>вариант</th>
+              <th>Описание вывода</th>
+            </tr>
+            <tr>
+              <td class="padding-t">-p</td>
+              <td class="padding-t">Показать патч, представленный с каждым коммитом.</td>
+            </tr>
+            <tr>
+              <td>--stat</td>
+              <td>Показать статистику для файлов, измененных в каждом коммите.</td>
+            </tr>
+            <tr>
+              <td>--shortstat</td>
+              <td>Отображать только измененную строку / вставки / удаления из команды --stat.</td>
+            </tr>
+            <tr>
+              <td>--name-only</td>
+              <td>Показать список файлов, измененных после фиксации информации.</td>
+            </tr>
+            <tr>
+              <td>--name-status</td>
+              <td>Показать список файлов, на которые добавлена ​​/ изменена / удалена информация.</td>
+            </tr>
+            <tr>
+              <td>--abbrev-commit</td>
+              <td>Показывать только первые несколько символов контрольной суммы SHA-1 вместо всех 40.</td>
+            </tr>
+            <tr>
+              <td>--relative-date</td>
+              <td>Отображать дату в относительном формате (например, «2 недели назад») вместо использования полного формата даты</td>
+            </tr>
+            <tr>
+              <td>--graph</td>
+              <td>Отображение графика ASCII ветви и истории слияния рядом с выводом журнала.</td>
+            </tr>
+            <tr>
+              <td>--pretty</td>
+              <td>Показать коммиты в альтернативном формате. Варианты включают oneline, короткий, полный, полный и формат (где вы указываете свой собственный формат).</td>
+            </tr>
+            <tr>
+              <td class="">--oneline</td>
+              <td class="">Сокращение для --pretty=oneline --abbrev-commitиспользования вместе.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="not-text-indent margin-top70"><span class="span-fencing-title">Ограничение выхода журнала</span></p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Варианты ограничения выхода <b>git log</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Варианты ограничения выхода <b>git log</b></caption>
+          <tbody>
+            <tr>
+              <th>вариант</th>
+              <th>Описание вывода</th>
+            </tr>
+            <tr>
+              <td class="padding-t">-&lt;n&gt;</td>
+              <td class="padding-t">Показать только последние n коммитов (-2.weeks - две недели)</td>
+            </tr>
+            <tr>
+              <td>--since, --after</td>
+              <td>Ограничьте коммиты теми, которые сделаны после указанной даты</td>
+            </tr>
+            <tr>
+              <td>--until, --before</td>
+              <td>Ограничьте коммиты теми, которые были сделаны до указанной даты</td>
+            </tr>
+            <tr>
+              <td>--author</td>
+              <td>Показывать только те коммиты, в которых запись автора соответствует указанной строке</td>
+            </tr>
+            <tr>
+              <td>--committer</td>
+              <td>Показывать только те коммиты, в которых запись коммиттера соответствует указанной строке</td>
+            </tr>
+            <tr>
+              <td>--grep</td>
+              <td>Показывать только коммиты с сообщением коммита, содержащим строку</td>
+            </tr>
+            <tr>
+              <td class="">-S</td>
+              <td class="">Показывать только фиксации добавления или удаления кода, соответствующего строке</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span class="hr hr_yellow margin-top70"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">Tagging</span></p>
+      <p><span class="span-fencing">git tag</span> - Список ваших тегов (с необязательным -lили --list)</p>
+      <p class="not-text-indent"><span class="span-fencing-title">Аннотированные метки</span></p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Аннотированные метки:</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Аннотированные метки:</caption>
+          <tbody>
+            <tr>
+              <td class="">
+                <pre><b>
+git tag -a v1.4 -m "my version 1.4"
+git tag
+v0.1
+v1.3
+v1.4</b></pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">git tag -a</span> - Создать аннотированный тег</p>
+      <p><span class="span-fencing">git tag -m</span> - Указывает сообщение</p>
+      <p><span class="span-fencing">git show v1.4</span> - посмотреть данные тега вместе с коммитом</p>
+      <p class="not-text-indent"><span class="span-fencing-title">Легкие метки</span></p>
+      <p><span class="span-fencing">git tag &lt;имя тега&gt;</span> - Создать легкий тег</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Легкие метки:</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Легкие метки:</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git tag v1.4-lw
+git tag
+v0.1
+v1.3
+v1.4
+v1.4-lw
+v1.5
+
+git show v1.4-lw
+commit ca82a6dff817ec66f44342007202690a93763949
+Author: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Mar 17 21:52:11 2008 -0700
+
+    Change version number</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="not-text-indent margin-top70"><span class="span-fencing-title">Пометка позже</span></p>
+      <p><span class="span-fencing">git tag -a v1.2 9fceb02</span> - Чтобы пометить коммит, можно указываете контрольную сумму коммита (или ее часть) в конце команды</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Пометка позже</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Пометка позже</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git tag
+v0.1
+v1.2
+v1.3
+v1.4
+v1.4-lw
+v1.5
+
+git show v1.2
+tag v1.2
+Tagger: Scott Chacon &lt;schacon@gee-mail.com&gt;
+Date:   Mon Feb 9 15:32:16 2009 -0800
+
+version 1.2
+commit 9fceb02d0ae598e95dc970b74767f19372d61af8
+Author: Magnus Chacon &lt;mchacon@gee-mail.com&gt;
+Date:   Sun Apr 27 20:43:35 2008 -0700
+
+    Update rakefile
+    ...</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="not-text-indent margin-top70"><span class="span-fencing-title">Обмен тегами</span></p>
+      <p><span class="span-fencing">git push origin &lt;tagname&gt;</span> - отправлять теги на общий сервер</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">Обмен тегами</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">Обмен тегами</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git push origin v1.5
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 2.05 KiB | 0 bytes/s, done.
+Total 14 (delta 3), reused 0 (delta 0)
+To git@github.com:schacon/simplegit.git
+ * [new tag]         v1.5 -> v1.5</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">--tags</span> - Если есть много тегов</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1"><b>--tags</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2"><b>--tags</b></caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git push origin --tags
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 160 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To git@github.com:schacon/simplegit.git
+ * [new tag]         v1.4 -> v1.4
+ * [new tag]         v1.4-lw -> v1.4-lw</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="not-text-indent"><span class="span-fencing-title margin-top70">Удаление тегов</span></p>
+      <p><span class="span-fencing">git tag -d &lt;tagname&gt;</span> - удалить тег в локальном хранилище</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">локальное удаление тега</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">локальное удаление тега</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git tag -d v1.4-lw
+Deleted tag 'v1.4-lw' (was e7d5add)</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">git push &lt;remote&gt; :refs/tags/&lt;tagname&gt;</span> - удалить тег с удаленного сервера №1</p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1">удаление удаленного сервера №1</caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2">удаление удаленного сервера №1</caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git push origin :refs/tags/v1.4-lw
+To /git@github.com:schacon/simplegit.git
+ - [deleted]         v1.4-lw</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="margin-top70"><span class="span-fencing">git push &lt;remote&gt; :refs/tags/&lt;tagname&gt;</span> - удалить тег с удаленного сервера №2</p>
+      <span class="hr hr_yellow"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">псевдонимы</span></p>
+      <div class="table-wrapper position-r">
+        <table class="table-hide position-a">
+          <caption class="table-hide__caption table-hide__caption1"><b>git config</b></caption>
+        </table>
+        <table class="table-hide table-hide__full position-a scale">
+          <caption class="table-hide__caption table-hide__caption2"><b>git config</b></caption>
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+  далее, вместо
+git commit
+  можно вводить
+git ci</pre>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="VSCode">
+    <div class="container bg-blue">
+      <div class="h2-wrapper bg-blue">
+        <h2 class="bg-red">Visual Studio Code</h2>
+      </div>
+      <p><span class="span-fencing">Ctrl + Shift + P</span> — вызов палитры команд.</p>
+      <p><span class="span-fencing">Ctrl + P</span> — открытие командной строки без флагов.</p>
+      <p><span class="span-fencing">Ctrl + T</span> — поиск символа ( название ф-ции )</p>
+      <p><span class="span-fencing">Ctrl + ,</span> — переход в окно настроек.</p>
+      <p><span class="span-fencing">Ctrl + B</span> — переключение видимости панели управления.</p>
+      <p><span class="span-fencing">F11</span> — полноэкранный режим.</p>
+      <p><span class="span-fencing">Ctrl + (Mouse wheel)</span> — переключение масштаба (<b>“editor.mouseWheelZoom”: true,</b> - чтобы работал зум на колесико мыши).</p>
+      <p><span class="span-fencing">Ctrl + K, Z</span> — Zen mode.</p>
+      <span class="hr hr_yellow"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">Сворачивание групп</span></p>
+      <p><span class="span-fencing">Ctrl + K Ctrl + 0</span> — Fold All - сворачивание всех раскрываемых блоков.</p>
+      <p><span class="span-fencing">Ctrl + K Ctrl + J</span> — Unfold All - раскрытие всех раскрываемых блоков.</p>
+      <span class="hr hr_yellow"></span>
+      <p><span class="span-fencing">Ctrl + Shift + [</span> — Свернуть внутреннюю область возле курсора.</p>
+      <p><span class="span-fencing">Ctrl + Shift + ]</span> — Развернуть внутреннюю область возле курсора.</p>
+      <span class="hr hr_yellow"></span>
+      <p><span class="span-fencing">Alt + mouse</span> — несколько курсоров.</p>
+      <p><span class="span-fencing">Ctrl + Alt + Arrow</span> — несколько курсоров.</p>
+      <p><span class="span-fencing">Ctrl (Fn) + F2 ( Ctrl + Shift +L )</span> — выбрать все слова.</p>
+      <p><span class="span-fencing">Ctrl + D</span> — выбрать слова.</p>
+      <p><span class="span-fencing">Ctrl + U</span> — отменить выбор слова.</p>
+      <p><span class="span-fencing">Alt + Shift + (Drag mouse)</span> — колоночное выделение.</p>
+      <p><span class="span-fencing">Alt + Ctrl + (Drag mouse)</span> — выделение строк.</p>
+      <p><span class="span-fencing">Alt + Arrow</span> — перемещение строки.</p>
+      <p><span class="span-fencing">Shift + Alt + Arrow</span> — копирование строки.</p>
+      <span class="hr hr_yellow"></span>
+      <p class="not-text-indent"><span class="span-fencing-title">Коментарии</span></p>
+      <p><span class="span-fencing">Ctrl + /</span> — вставка строчного комментария.</p>
+      <p><span class="span-fencing">Shift + Alt + A</span> — вставка блочного комментария.</p>
+
+      <p><span class="span-fencing">.inner|c</span> — комментарий с закрывающим тегом</p>
+    </div>
+  </section>
+  <section class="photoshop">
+    <div class="container bg-aqua-blue">
+      <div class="h2-wrapper bg-aqua-blue">
+        <h2 class="bg-red">PhotoShop</h2>
+      </div>
+      <p><span class="span-fencing">Ctrl + H</span> - убрать сетку.</p>
+      <p><span class="span-fencing">(перемещение) V + Alt + right-button</span> - выбрать слой</p>
+    </div>
+  </section>
+  <section class="settings_json">
+    <div class="container bg-orange">
+      <div class="h2-wrapper bg-orange">
+        <h2 class="bg-red">json</h2>
+      </div>
+      <p><b>ctrl + p</b> and type <b>>sett</b> press <b>enter</b></p>
+
+      <pre>
+            {
+            // editor
+            "editor.fontFamily": "'Fira Code'", // , Consolas, 'Courier New', monospace"
+            "editor.fontLigatures": true, // false
+            "editor.fontWeight": "300", // Light
+            "editor.fontSize": 18,
+            "editor.formatOnSave": true, // false
+            "editor.formatOnPaste": true, // false
+            "editor.insertSpaces": true,
+            "editor.mouseWheelZoom": true,
+            // "editor.multiCursorModifier": "ctrlCmd", // "Alt"
+            "editor.renderControlCharacters": false,
+            "editor.renderWhitespace": "all",
+            "editor.tabSize": 2,
+                editor: Detect Indentation // снять галочку
+            "editor.trimAutoWhitespace": true, // default
+            "editor.wordWrap": "wordWrapColumn", // bounded, off
+            "editor.wordWrapColumn": 380,
+            // window
+            "window.menuBarVisibility": "default",
+            "window.zoomLevel": -1,
+            // workbench
+            "workbench.activityBar.visible": true,
+            "workbench.colorTheme": "Material Theme High Contrast",
+            "workbench.editor.tabSizing": "shrink",
+            "workbench.iconTheme": "vscode-icons",
+            "workbench.settings.useSplitJSON": true, // false
+            "workbench.sideBar.location": "left",
+            "workbench.startupEditor": "newUntitledFile",
+            // files
+            "files.autoSave": "afterDelay",
+            "files.autoSaveDelay": 1000,
+            "files.defaultLanguage": "html",
+            "files.insertFinalNewline": true,
+            "files.trimFinalNewlines": true,
+            "files.trimTrailingWhitespace": true,
+            // file Explorer
+            // "explorer.confirmDelete": false, // true
+            // terminal
+            "terminal.integrated.shell.windows":
+                    "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+           // Breadcrumb Navigation
+           "breadcrumbs.enabled": true,
+           // Git
+           "git.autofetch": true,
+           "git.enableSmartCommit": true,
+           // "git.path": "#", // null
+           //
+           "[html]": {
+           "editor.defaultFormatter": "HookyQR.beautify"
+           },
+           "[javascript]": {
+           "editor.defaultFormatter": "HookyQR.beautify"
+           },
+           "emmet.syntaxProfiles": {
+           "javascript": "jsx"
+           },
+           "liveServer.settings.CustomBrowser": "chrome",
+           "liveServer.settings.donotShowInfoMsg": true,
+           "liveServer.settings.donotVerifyTags": true,
+           "html.format.wrapLineLength": 200,
+           "team.showWelcomeMessage": false,
+           "diffEditor.ignoreTrimWhitespace": false,
+           "[bat]": {},
+           // "eslint.autoFixOnSave": true,
+           // "eslint.validate": [
+           // "javascript",
+           // "javascriptreact"
+           // ],
+           // "javascript.validate.enable": true,
+           // "javascript.updateImportsOnFileMove.enabled": "always",
+           // "gitlens.historyExplorer.enabled": true,
+           // "diffEditor.ignoreTrimWhitespace": false,
+           }</pre>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('.div-table__caption').css({
+        'borderRadius': '8px',
+        'borderBottom': '1px solid transparent',
+      }).siblings().hide().parent().css({
+        'z-index': '0',
+      });
+
+      $('.div-table__caption').click(function () {
+        if ($(this).siblings().is(':hidden')) {
+          $('.div-table__caption').css({
+            'borderRadius': '8px',
+            'borderBottom': '1px solid transparent',
+          }).siblings().slideUp('slow').parent().css({
+            'z-index': '0',
+          });
+          $(this).css({
+            'borderRadius': '8px 8px 0 0',
+            'borderBottom': '1px solid black',
+          }).siblings().slideDown('slow').parent().css({
+            'z-index': '1',
+          });
+        } else {
+          $(this).css({
+            'borderRadius': '8px',
+            'borderBottom': '1px solid transparent',
+          }).siblings().slideUp('slow');
+        }
+      });
+
+      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      $(document).mouseup(function (e) {
+        if (!$('.div-table__wrapper').is(e.target) && $('.div-table__wrapper').has(e.target).length === 0) {
+          $('.div-table__body').slideUp() && $('.div-table__caption').css({
+            'borderRadius': '8px',
+            'borderBottom': '1px solid transparent',
+          });
+        }
+      });
+      // $(document).scroll(function (e) {
+      //   if (!$('.div-table__wrapper').is(e.target) && $('.div-table__wrapper').has(e.target).length === 0) {
+      //     $('.div-table__body').slideUp() && $('.div-table__caption').css({
+      //       'borderRadius': '8px',
+      //       'borderBottom': '1px solid transparent',
+      //     });
+      //   }
+      // });
+      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      $('.table-hide__caption').click(function () {
+        $(this).parent().toggleClass("scale");
+        $(this).parent().siblings().toggleClass('scale');
+      });
+      // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      // with add class scale
+      // $('.div-table__caption').click(function () {
+      //   if ($(this).siblings().hasClass('scale')) {
+      //     $('.div-table__body').addClass('scale').siblings().css({
+      //       'borderRadius': '8px',
+      //       'borderBottom': 'none',
+      //       'transition': 'all 0.5s ease 0s',
+      //     }).parent().css({
+      //       'z-index': '0'
+      //     });
+      //     $(this).css({
+      //       'borderRadius': '8px 8px 0 0',
+      //       'borderBottom': '1px solid black',
+      //       'transition': 'all 0.5s ease 0s',
+      //     }).siblings().removeClass('scale').parent().css({
+      //       'z-index': '1'
+      //     });
+      //   } else {
+      //     $('.div-table__body').addClass('scale').siblings().css({
+      //       'borderRadius': '8px',
+      //       'borderBottom': 'none',
+      //       'transition': 'all 0.5s ease 0s',
+      //     }).parent().css({
+      //       'z-index': '0'
+      //     });
+      //   };
+      // });
+    });
+  </script>
+</body>
+
+</html>
