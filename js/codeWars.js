@@ -16,7 +16,7 @@ return revArr //  = arr.reverse();
   }
   return arr;
 } */
-console.log("[]", reverse([1, 2, 3, 4, 5]));
+// console.log("[]", reverse([1, 2, 3, 4, 5]));
 // console.log("[]", reverse(['hello', 'world', 'how', 'are', 'you', '?']));
 // console.log("{}", reverse([{a: 5}, {b: 4}]));
 // /|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|
