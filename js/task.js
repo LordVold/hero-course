@@ -101,10 +101,145 @@ for (let i = 1; i <= someNum; i++) {
 }
 // console.log("someNumRes", someNumRes);
 // /|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|
-// ~~~~~~~~   task #3   ~~~~~~~~~
-
+// ~~~~~~~~   task #3   functions   ~~~~~~~~~
+function foo(limit) {
+  let value;
+  if (limit > 0) {
+    value = limit + foo(limit - 1);
+  } else {
+    value = limit;
+  }
+  return value
+}
+// console.log("oo(3)", foo(3));
+//___________________________________________________________________________
+function multiply(num) {
+  let argL = arguments.length;
+  let mul = 1;
+  for (let i = 0; i < argL; i++) {
+    mul *= arguments[i];
+  }
+  return mul
+}
+// console.log("multiply(1, 2, 3, 4 )", multiply(1, 2, 3, 4 ));
+//___________________________________________________________________________
+function recurs10(a) {
+  return (a != 1) ? a * recurs10(a - 1) : 1;
+}
+// console.log("recurs10(10)", recurs10(10));
+//___________________________________________________________________________
+function reversString(testr) {
+  let revString = testr[testr.length - 1];
+  for (let i = testr.length - 2; i >= 0; i--) {
+    revString += testr[i];
+  }
+  return revString;
+}
+// console.log("reversString('testr')", reversString('testr'));
+//___________________________________________________________________________
+function getCodeStringFromText(hi) {
+  let charCodeStr = hi[0].charCodeAt();
+  for (let i = 1; i < hi.length; i++) {
+    charCodeStr += ' ' + hi[i].charCodeAt();
+  }
+  return charCodeStr
+}
+// console.log("getCodeStringFromText('hello')", getCodeStringFromText('hello'));
+//___________________________________________________________________________
+function printChars(test) {
+  console.log(test[0]);
+  if (test.length > 1) printChars(test.substr(1));
+}
+// printChars('tesr');
+//___________________________________________________________________________
+/* function resFunc(value, callBack) {
+  let newStr = '';
+  for (let i = 0; i < value.length; i++) {
+    newStr += callBack(value[i]);
+  }
+  `new value ${newStr}`;
+  console.log(`new value: ${newStr}`)
+}
+resFunc(['value', 'and', 'another', 'value'], function (symbol) {
+  return symbol = symbol[0].toUpperCase() + symbol.slice(1);
+}); */
+//___________________________________
+/* function resFunc(value, callBack) {
+  let newStr = '';
+  for (let i = 0; i < value.length; i++) {
+    newStr += callBack(value[i]) + ', ';
+  }
+  newStr = newStr.slice(0, -2);
+  `new value ${newStr}`;
+  console.log(`new value: ${newStr}`)
+}
+resFunc([10, 20, 30], function (symbol) {
+  return symbol *= 10;
+}); */
+//___________________________________
+/* function resFunc(value, callBack) {
+  let newStr = '';
+  for (let i = 0; i < value.length; i++) {
+    newStr += callBack(value[i]) + ', ';
+  }
+  newStr = newStr.slice(0, -2);
+  `new value ${newStr}`;
+  console.log(`new value: ${newStr}`)
+}
+resFunc([{
+    age: 25,
+    name: 'John'
+  }, {
+    age: 24,
+    name: 'Karen'
+  }],
+  function (symbol) {
+    return symbol = `${symbol.name} is ${symbol.age}`;
+  }); */
+//___________________________________
+/* function resFunc(value, callBack) {
+  let newStr = '';
+  for (let i = 0; i < value.length; i++) {
+    newStr += callBack(value[i]) + ', ';
+  }
+  newStr = newStr.slice(0, -2);
+  `new value ${newStr}`;
+  console.log(`new value: ${newStr}`)
+}
+resFunc(['abc', '123'],
+  function (symbol) {
+    let rev = symbol[symbol.length - 1];
+    for (let i = symbol.length - 2; i >= 0; i--) {
+      rev += symbol[i];
+    }
+    return rev
+  }); */
+//___________________________________
+/* function resFunc(value, callBack) {
+  let newStr = '';
+  for (let i = 0; i < value.length; i++) {
+    newStr += callBack(value[i]) + ', ';
+  }
+  newStr = newStr.slice(0, -2);
+  `new value ${newStr}`;
+  console.log(`new value: ${newStr}`)
+}
+resFunc([1, 2, 3],
+  function (number) {
+    return number + 5
+  }); */
 
 //___________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
 
 // /|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|
 // ~~~~~~~~   task #4   ~~~~~~~~~
