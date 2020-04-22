@@ -8,16 +8,52 @@
   <title>HERO</title>
   <link rel="shortcut icon" href="#" type="image/png">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+
   <link rel="stylesheet" href="../css/grid.css">
   <link rel="stylesheet" href="../css/flex.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <h1>HELLO</h1>
+  <section class="hero-todo mt-5">
+    <div class="container">
+      <div class="card mb-3">
+        <div class="card-header">
+          Add todo
+        </div>
+        <div class="card-body">
+          <form action="" name="addTodoItem">
+            <div class="form-group">
+              <label for="todoText">Text</label>
+              <input type="text" class="form-control" id="todoText">
+              <div class="invalid-feedback">
+                Please enter some text
+              </div>
+            </div>
+            <button class="btn btn-primary">Add</button>
+          </form>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <h3 class="text-center">Task list</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <!-- <li class="list-group-item"></li> -->
+          </ul>
+        </div>
+      </div>
+      <button class="btn btn-primary">Clear list</button>
+    </div>
+  </section>
 
   <script src="./js/task.js"></script>
   <script src="./js/codeWars.js"></script>
+  <script src="./js/hero-todo.js"></script>
 </body>
 
 </html>
