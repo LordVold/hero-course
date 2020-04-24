@@ -148,5 +148,10 @@ button {
 /* ~~~ DEFAULT COMPONENT END ~~~ */
 /* ==================================== */
 /* ~~~ CUSTOM STYLE START ~~~ */
-
+.notification-alert {
+  display: none;
+}
+.notification-alert.show {
+  display: block;
+}
 /* ~~~ CUSTOM STYLE END ~~~ */
