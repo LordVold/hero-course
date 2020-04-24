@@ -152,3 +152,5 @@ inputText.addEventListener('keyup', function (e) {
     inputText.classList.remove('is-invalid');
   }
 })
+
+let someCode = '';
