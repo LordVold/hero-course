@@ -1,8 +1,14 @@
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-let ul = document.querySelector('.list-group');
-let form = document.forms['addTodoItem'];
-let inputText = form.elements['todoText'];
+// todo
+/* // let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+let tasks = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+localStorage.setItem('items', JSON.stringify(tasks));
+// const data = JSON.parse(localStorage.getItem('items'));
+
+const form = document.forms['addTodoItem'];
+const inputText = form.elements['todoText'];
+const ul = document.querySelector('.list-group');
 let notificationAlert = document.querySelector('.notification-alert');
+const clearListBtn = document.querySelector('.clearList');
 
 function generateId() {
   let id = '';
@@ -15,13 +21,13 @@ function generateId() {
 }
 
 function listTemplate(task) {
-  let li = document.createElement('li');
+  const li = document.createElement('li');
   li.className = 'list-group-item d-flex align-items-center';
   li.setAttribute('data-id', task.id);
-  let span = document.createElement('span');
+  const span = document.createElement('span');
   span.textContent = task.text;
 
-  let iEdit = document.createElement('i');
+  const iEdit = document.createElement('i');
   iEdit.className = 'far fa-edit edit-item ml-auto';
   iEdit.style = 'cursor: pointer;';
   iEdit.style.color = 'orange';
@@ -32,7 +38,7 @@ function listTemplate(task) {
     this.style.color = "orange"
   }
 
-  let iDelete = document.createElement('i');
+  const iDelete = document.createElement('i');
   iDelete.className = 'far fa-trash-alt delete-item ml-3';
   iDelete.style = 'cursor: pointer;';
   iDelete.style.color = 'blue';
@@ -50,10 +56,6 @@ function listTemplate(task) {
   return li;
 }
 
-// function clearList() {
-//   ul.innerHTML = '';
-// }
-
 function generateList(tasksArray) {
   for (let i = 0; i < tasksArray.length; i++) {
     ul.appendChild(listTemplate(tasksArray[i]));
@@ -67,25 +69,13 @@ function addList(list) {
     text: list,
   }
   tasks.unshift(newTask);
+  localStorage.setItem('items', JSON.stringify(tasks));
   ul.insertAdjacentElement('afterbegin', listTemplate(newTask));
-  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-function deleteListItem(id) {
-  for (let i = 0; i < tasks.length; i++) {
-    if (tasks[i].id === id) {
-      tasks.splice(i, 1);
-      break;
-    }
-  }
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-
-  massage({
-    text: 'Task deleted success',
-    cssClass: 'alert-warning',
-    timeout: 4000,
-  });
-}
+// data.forEach(item => {
+//   listTemplate(item);
+// })
 
 function editListItem(id, newValue) {
   for (let i = 0; i < tasks.length; i++) {
@@ -94,7 +84,7 @@ function editListItem(id, newValue) {
       break;
     }
   }
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  localStorage.setItem('items', JSON.stringify(tasks));
 
   massage({
     text: 'Task updated success',
@@ -111,6 +101,31 @@ function massage(settings) {
   setTimeout(function () {
     notificationAlert.classList.remove('show');
   }, settings.timeout);
+}
+
+function deleteListItem(id) {
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i].id === id) {
+      tasks.splice(i, 1);
+      break;
+    }
+  }
+  localStorage.setItem('items', JSON.stringify(tasks));
+
+  massage({
+    text: 'Task deleted success',
+    cssClass: 'alert-warning',
+    timeout: 4000,
+  });
+}
+
+clearListBtn.addEventListener('click', clearList);
+
+function clearList() {
+  localStorage.clear();
+  while (ul.firstChild) {
+    ul.removeChild(ul.firstChild)
+  }
 }
 
 ul.addEventListener('click', function (e) {
@@ -151,4 +166,33 @@ inputText.addEventListener('keyup', function (e) {
   if (inputText.value) {
     inputText.classList.remove('is-invalid');
   }
-})
+}) */
+// todo end
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// this (call, apply)
+function getPrice(current) {
+  return `This goods cost ${this.price}`
+}
+
+let intel = {
+  name: 'intel i7 3.5Ghz',
+  price: 100,
+  discount: 10,
+  count: 50,
+  getPrice: getPrice,
+};
+let amd = {
+  name: 'AMD A8 3.5Ghz',
+  price: 75,
+  discount: 10,
+  count: 50,
+  getPrice: getPrice,
+};
+console.log("getPrice -> intel.getPrice()", intel.getPrice());
+console.log("getPrice -> intel.getPrice()", amd.getPrice());
+// (call, apply)
+getPrice.call(amd, '$');
+getPrice.apply(amd, ['$', 'something else']);
+// bind
+setTimeout(intel.getPrice, 2000); // lost this
+intel.getPrice = getPrice.bind(intel);
